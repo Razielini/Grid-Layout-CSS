@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Line Size</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .container {
+      display: grid;
+      grid-template-rows: [row-inicio] 1fr 1fr [row-end];
+      grid-template-columns: [inicio] 1fr 1fr 1fr [destacado-end] 1fr 1fr [destacado2-end] 1fr 1fr [final];
+      height: 50vh;
+      grid-gap: 5px;
+    }
+    .item {
+      background-color: aqua;
+      border: 2px solid #000;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    
+    .item:nth-of-type(1) {
+      grid-column: inicio / destacado-end;
+      grid-row: row-inicio / row-end;
+    }
+    .item:nth-of-type(2) {
+      grid-column: destacado-end / destacado2-end;
+      grid-row: row-inicio / row-end;
+    }
+    .item:nth-of-type(3) {
+      grid-column: destacado2-end / final;
+    }
+  </style>
+</head>
+<body>
+  <section class="container">
+    <div class="item">item #1</div>
+    <div class="item">item #2</div>
+    <div class="item">item #3</div>
+    <div class="item">item #4</div>
+    <div class="item">item #5</div>
+  </section>
+</body>
+</html>
