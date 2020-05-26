@@ -1,0 +1,15 @@
+{
+  "name": "css-grid-layout",
+  "version": "1.0.0",
+  "description": "Ejemplos de CSS Grid Layout",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "CSS",
+    "grid-layout"
+  ],
+  "author": "Razielini",
+  "license": "ISC"
+}
