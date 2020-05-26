@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Areas</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .container {
+      display: grid;
+      grid-template: 100px 1fr 100px / 200px 1fr;
+      grid-gap: 30px 15px;
+      height: 98vh;
+      grid-template-areas: "header header"
+                           "left contenido"
+                           "footer footer";
+    }
+    .item {
+      background-color: aqua;
+      border: 2px solid #000;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    .header {
+      grid-area: header;
+    }
+    .left {
+      grid-area: left;
+    }
+    .contenido {
+      grid-area: contenido;
+    }
+    .footer {
+      grid-area: footer;
+    }
+    
+  </style>
+</head>
+<body>
+  <section class="container">
+    <div class="item header">Header #1</div>
+    <div class="item left">Left #2</div>
+    <div class="item contenido">contenido #3</div>
+    <div class="item footer">Footer #5</div>
+  </section>
+</body>
+</html>
